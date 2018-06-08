@@ -1,0 +1,62 @@
+@import '~bpk-mixins';
+input {
+  width: 80%;
+  padding-bottom: 40px;
+}
+.App {
+  .card-thing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .result-image{
+    background-image: url('https://i.imgur.com/2LwhPif.jpg');
+    height: 500px;
+    padding: 0px;
+    background-size: cover;
+    color: white;
+    font-size: 64px;
+    padding-top: 200px;
+  }
+
+  .small-img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .input-thing{
+    height: 100px;
+  }
+
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  text-align: center;
+
+  &__header {
+    padding: $bpk-spacing-xl 0;
+    background-color: $bpk-color-blue-500;
+    background-image: $bpk-primary-gradient;
+    color: $bpk-color-white;
+
+    @include bpk-box-shadow-sm;
+
+    @include bpk-breakpoint-mobile {
+      padding: $bpk-spacing-base 0;
+    }
+  }
+
+  &__main {
+    padding: $bpk-spacing-base 0;
+  }
+
+  &__heading {
+    margin-bottom: $bpk-spacing-sm;
+  }
+
+  &__text {
+    margin-bottom: $bpk-spacing-sm;
+  }
+
+}

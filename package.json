@@ -1,0 +1,36 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "react-slider": "^0.11.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
+    "lint:js": "eslint . --ignore-path .gitignore --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "backpack-react-scripts": "^5.1.1",
+    "bpk-component-button": "^2.0.21",
+    "bpk-component-card": "^1.1.14",
+    "bpk-component-code": "^1.1.4",
+    "bpk-component-grid": "^1.1.69",
+    "bpk-component-slider": "^1.1.30",
+    "bpk-component-text": "^1.0.61",
+    "bpk-component-ticket": "^1.1.49",
+    "bpk-mixins": "^17.10.0",
+    "bpk-stylesheets": "^3.2.106",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-native-bpk-component-card": "^1.2.23",
+    "react-native-bpk-component-text": "^2.1.36"
+  }
+}
