@@ -31,4 +31,7 @@ npm scripts:
   Your app is ready to be deployed!
 - `npm run lint`: Lints all javascript using [`eslint-config-skyscanner`](https://www.npmjs.com/package/eslint-config-skyscanner).
 
+## useful links ##
 
+https://backpack.github.io/components/ticket?platform=web#default
+https://github.com/Skyscanner/hackameetup/blob/master/web/README.md
