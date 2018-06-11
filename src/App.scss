@@ -1,12 +1,21 @@
 @import '~bpk-mixins';
-input {
-  width: 80%;
-  padding-bottom: 40px;
+body {
+  background-color: #00b2d6;
 }
 .App {
+
+  .logo{
+    width: 50%;
+  }
   .card-thing{
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .slider_input {
+    width: 80%;
+    padding-bottom: 40px;
+    display: inline-block;
   }
 
   .result-image{
@@ -36,9 +45,9 @@ input {
 
   &__header {
     padding: $bpk-spacing-xl 0;
-    background-color: $bpk-color-blue-500;
-    background-image: $bpk-primary-gradient;
-    color: $bpk-color-white;
+    background-color: white;
+    background-image: white;
+    color: #00b2d6;
 
     @include bpk-box-shadow-sm;
 
@@ -49,6 +58,7 @@ input {
 
   &__main {
     padding: $bpk-spacing-base 0;
+    background-color: #00b2d6;
   }
 
   &__heading {
