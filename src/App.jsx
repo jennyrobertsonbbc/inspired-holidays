@@ -108,7 +108,7 @@ const App = () => (
         <img alt="icon" className={c('small-img')} src="https://image.flaticon.com/icons/svg/944/944883.svg"/>
       </BpkCard>
       <BpkCard className={c('card-thing')}>
-        <BpkText tagName="h2" textStyle="xl">Activity or Relaxing?</BpkText>
+        <BpkText tagName="h2" textStyle="xl">Active or Relaxing?</BpkText>
         <img alt="icon" className={c('small-img')} src="https://image.flaticon.com/icons/svg/437/437043.svg"/>
         <Slider parent="activity" />
         <img alt="icon" className={c('small-img')} src="https://image.flaticon.com/icons/svg/360/360867.svg"/>
@@ -135,6 +135,7 @@ const App = () => (
       <BpkCard className={c('card-thing')}>
         <BpkText tagName="h2" textStyle="xl" className={`result-image ${c('result-image')}`}>Where will you go?</BpkText>
       </BpkCard>
+      <BpkButton featured className={c('book-now')}>Book now!</BpkButton>
 
     </main>
   </div>

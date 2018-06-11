@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "backpack-react-scripts": "^5.1.1",
-    "bpk-component-button": "^2.0.21",
+    "bpk-component-button": "^2.1.0",
     "bpk-component-card": "^1.1.14",
     "bpk-component-code": "^1.1.4",
     "bpk-component-grid": "^1.1.69",
