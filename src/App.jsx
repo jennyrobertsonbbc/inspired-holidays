@@ -26,24 +26,32 @@ function createHoliday() {
   const temperature = result.hot < 50 ? 'hot' : 'cold';
   const culture = result.classical < 50 ? 'local culture' : 'cool clubbing';
   let activity = result.classical < 50 ? 'water sports' : 'beach lounging';
+  let bg;
 
   let location;
   if (distance === 'close' && temperature === 'hot') {
     location = 'the South of France';
+    bg = 'url("https://images.ecosia.org/K0zAvITAocveLA1pVONkMigMTTA=/0x390/smart/http%3A%2F%2Fwallyrent.com%2Fwp-content%2Fuploads%2F2015%2F02%2Fcannes02.jpg")';
   }
   if (distance === 'close' && temperature === 'cold') {
     location = 'the Swiss Alps';
     activity = 'skiing';
+    bg = 'url("https://i.pinimg.com/originals/45/e4/86/45e486a8338db70e3ecefb611c0216bc.jpg")';
   }
   if (distance === 'far' && temperature === 'hot') {
     location = 'California';
+    bg = 'url("https://images.ecosia.org/poAG9eRLKxUh-EKZ_Sglhp0iC4Q=/0x390/smart/http%3A%2F%2Fwallpapercave.com%2Fwp%2Fe7QjtIF.jpg")';
   }
   if (distance === 'far' && temperature === 'cold') {
     location = 'Japan';
     activity = 'snowboarding';
+    bg = 'url("https://images.ecosia.org/OutaVQE8ouUWM8RtgEEOH_MOijc=/0x390/smart/http%3A%2F%2Fi.dailymail.co.uk%2Fi%2Fpix%2Ftm%2F2008%2F03%2FKokkaidoMoS20308_428x269_to_468x312.jpg")';
   }
 
-  return `A ${foodOption} holiday in ${location} with ${activity} and some ${culture}`;
+  return {
+    text: `A ${foodOption} holiday in ${location} with ${activity} and some ${culture}`,
+    bg,
+  };
 }
 
 class Slider extends React.Component {
@@ -57,7 +65,11 @@ class Slider extends React.Component {
   onChange = (value) => {
     this.setState({ value });
     console.log(this.props.parent);
-    document.querySelector('.result-image').innerHTML = createHoliday();
+    const resultBox = document.querySelector('.result-image');
+    resultBox.innerHTML = createHoliday().text;
+    resultBox.style.backgroundImage = createHoliday().bg;
+    resultBox.style.color = 'white';
+
     result[this.props.parent] = value;
 
   };
@@ -82,7 +94,7 @@ const App = () => (
       <BpkGridContainer>
         <BpkGridRow>
           <BpkGridColumn width={12}>
-            <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Inspire Me</BpkText>
+            <BpkText tagName="h1" textStyle="xxl" className={c('App__heading')}>Inspired Holidays</BpkText>
             <img className={c('logo')} src="https://p17.zdassets.com/hc/theme_assets/470143/200011371/skyscanner_RGB_logo.svg" alt="logo"/>
           </BpkGridColumn>
         </BpkGridRow>
@@ -121,20 +133,8 @@ const App = () => (
       </BpkCard>
 
       <BpkCard className={c('card-thing')}>
-        <BpkText tagName="h2" textStyle="xl" className={`result-image ${c('result-image')}`}>Your result here</BpkText>
+        <BpkText tagName="h2" textStyle="xl" className={`result-image ${c('result-image')}`}>Where will you go?</BpkText>
       </BpkCard>
-
-      <BpkTicket stub="£200">
-        Heathrow -> Paris
-      </BpkTicket>
-
-      <BpkTicket stub="£200">
-        Heathrow -> Paris
-      </BpkTicket>
-
-      <BpkTicket stub="£200">
-        Heathrow -> Paris
-      </BpkTicket>
 
     </main>
   </div>

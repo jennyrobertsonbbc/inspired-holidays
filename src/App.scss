@@ -3,6 +3,7 @@ body {
   background-color: #00b2d6;
 }
 .App {
+  color: #524c61;
 
   .logo{
     width: 50%;
@@ -19,13 +20,14 @@ body {
   }
 
   .result-image{
-    background-image: url('https://i.imgur.com/2LwhPif.jpg');
+    background-image: url('https://css.skyscnr.com/inspiration/static/embeddableMap/svg_map_20171218.svg');
     height: 500px;
     padding: 0px;
     background-size: cover;
-    color: white;
+    color: #524c61;
     font-size: 64px;
-    padding-top: 200px;
+    padding-top: 20px;
+    line-height: 65px;
   }
 
   .small-img{
