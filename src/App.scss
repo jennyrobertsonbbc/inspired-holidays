@@ -1,22 +1,39 @@
 @import '~bpk-mixins';
-input {
-  width: 80%;
-  padding-bottom: 40px;
+body {
+  background-color: #00b2d6;
 }
 .App {
+  color: #524c61;
+
+  .book-now{
+    font-size: 50px;
+    width: 350px;
+    height: 60px;
+  }
+
+  .logo{
+    width: 50%;
+  }
   .card-thing{
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
+  .slider_input {
+    width: 80%;
+    padding-bottom: 40px;
+    display: inline-block;
+  }
+
   .result-image{
-    background-image: url('https://i.imgur.com/2LwhPif.jpg');
+    background-image: url('https://css.skyscnr.com/inspiration/static/embeddableMap/svg_map_20171218.svg');
     height: 500px;
     padding: 0px;
     background-size: cover;
-    color: white;
+    color: #524c61;
     font-size: 64px;
-    padding-top: 200px;
+    padding-top: 20px;
+    line-height: 65px;
   }
 
   .small-img{
@@ -36,9 +53,9 @@ input {
 
   &__header {
     padding: $bpk-spacing-xl 0;
-    background-color: $bpk-color-blue-500;
-    background-image: $bpk-primary-gradient;
-    color: $bpk-color-white;
+    background-color: white;
+    background-image: white;
+    color: #00b2d6;
 
     @include bpk-box-shadow-sm;
 
@@ -49,6 +66,7 @@ input {
 
   &__main {
     padding: $bpk-spacing-base 0;
+    background-color: #00b2d6;
   }
 
   &__heading {
