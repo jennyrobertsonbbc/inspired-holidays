@@ -1,12 +1,9 @@
 import React from 'react';
-import { BpkCode } from 'bpk-component-code';
 import BpkButton from 'bpk-component-button';
 import BpkText from 'bpk-component-text';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 import BpkSlider from 'bpk-component-slider';
-import ReactSlider from 'react-slider';
 import BpkCard from 'bpk-component-card';
-import BpkTicket from 'bpk-component-ticket';
 
 import STYLES from './App.scss';
 
@@ -21,11 +18,11 @@ const result = {
 };
 
 function createHoliday() {
-  const foodOption = result.catered < 50 ? 'self catered' : 'all inclusive';
+  const foodOption = result.catered < 50 ? 'A self catered' : 'An all inclusive';
   const distance = result.close < 50 ? 'close' : 'far';
   const temperature = result.hot < 50 ? 'hot' : 'cold';
   const culture = result.classical < 50 ? 'local culture' : 'cool clubbing';
-  let activity = result.classical < 50 ? 'water sports' : 'beach lounging';
+  let activity = result.activity < 50 ? 'water sports' : 'beach lounging';
   let bg;
 
   let location;
@@ -49,7 +46,7 @@ function createHoliday() {
   }
 
   return {
-    text: `A ${foodOption} holiday in ${location} with ${activity} and some ${culture}`,
+    text: `${foodOption} holiday in ${location} with ${activity} and some ${culture}`,
     bg,
   };
 }
