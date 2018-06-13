@@ -1,3 +1,19 @@
+# Inspired Holidays #
+
+Submission for the Skyscanner hack, by Catriona Morrison and Jenny Robertson.
+
+Inspired holidays allows customers to use a slider to pick their holiday preferences, and provides them with a tailor made holiday suggestion which they can book from the Skyscanner website.
+
+![alt text](https://i.imgur.com/QYflrX2.jpg)
+
+## How to use ##
+
+Slide the sliders to your preference for holidays, e.g. hot or cold. Your holiday suggestion will be shown at the bottom of the page.
+
+Note: In the future, this could be updated to use the Skyscanner API to provide real results
+
+-------
+
 > *This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) +
   [backpack-react-scripts](https://github.com/Skyscanner/backpack-react-scripts/tree/master/packages/react-scripts).*
   It is very similar to one that you would create using [Create React App](https://github.com/facebookincubator/create-react-app)
