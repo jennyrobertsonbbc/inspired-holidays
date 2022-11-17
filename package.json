@@ -18,7 +18,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "backpack-react-scripts": "^5.1.1",
+    "backpack-react-scripts": "^7.0.6",
     "bpk-component-button": "^2.1.0",
     "bpk-component-card": "^1.1.14",
     "bpk-component-code": "^1.1.4",
